@@ -1,0 +1,31 @@
+<div class="card" style="width: 18rem; margin-top: 40px;">
+  <div (click)="closePopup()">
+    <span class="close" aria-hidden="true">&times;</span>
+  </div>
+  <div class="card-body" style="padding-top: 0px !important;">
+    <h5 class="card-title">Config Modal</h5>
+    <p class="card-text">Select wich properties show</p>
+
+  </div>
+  <ul class="list-group list-group-flush">
+
+    <li class="list-group-item">
+      <div>
+        <h3>Name</h3>
+        <div class="btn-group" role="group" aria-label="Basic example">
+          <button type="button" class="btn" (click)="flagName=!flagName" [ngClass]="{'btn-success': flagName,'btn-secondary': !flagName}">Active</button>
+          <button type="button" class="btn" (click)="flagName=!flagName" [ngClass]="{'btn-success': !flagName,'btn-secondary': flagName}">Inactive</button>
+        </div>
+      </div>
+    </li>
+    <li class="list-group-item">
+      <div>
+        <h3>Salary</h3>
+        <div class="btn-group" role="group" aria-label="Basic example">
+          <button type="button" class="btn" (click)="flagSalary=!flagSalary" [ngClass]="{'btn-success': flagSalary,'btn-secondary': !flagSalary}">Active</button>
+          <button type="button" class="btn" (click)="flagSalary=!flagSalary" [ngClass]="{'btn-success': !flagSalary,'btn-secondary': flagSalary}">Inactive</button>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>

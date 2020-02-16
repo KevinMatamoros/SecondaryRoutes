@@ -1,0 +1,19 @@
+<ul class="nav nav-tabs">
+    <li class="nav-item">
+        <a class="nav-link" [routerLink]="[ '/home' ]" routerLinkActive="active">Home</a>
+    </li>
+    <li class="nav-item">
+        <a class="nav-link" [routerLink]="[{ outlets: { popup: ['config'] } }]">Config</a>
+    </li>
+</ul>
+<div class="container">
+    <div class="row">
+        <div class="col-8">
+            <router-outlet #routerOutlet="outlet"></router-outlet>
+
+        </div>
+        <div class="col-4">
+            <router-outlet name="popup"></router-outlet>
+        </div>
+    </div>
+</div>
