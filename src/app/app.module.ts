@@ -33,7 +33,7 @@ import { TableInfoComponent } from './shared-components/table-info/table-info.co
     ]),
     StoreDevtoolsModule.instrument({
       maxAge: 10
-    }),
+    })
   ],
   providers: [],
   bootstrap: [AppComponent]

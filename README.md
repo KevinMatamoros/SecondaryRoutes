@@ -1,7 +1,8 @@
 # SecondaryRoute
+Check the project in this url: https://KevinMatamoros.github.io/SecondaryRoutes/
+
 Basic example in secondary routes
 
-PENDING: Finish the modal of config and NGRX
 
 ## Development server
 
