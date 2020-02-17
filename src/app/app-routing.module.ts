@@ -6,7 +6,8 @@ import { ConfigComponent } from './shared-components/config/component/config.com
 const routes: Routes = [
   {path:'home', component:HomeComponent},
   {path:'config', component: ConfigComponent, outlet:'popup'},
-  {path:'', redirectTo:'home', pathMatch:'full'},
+  {path:'', redirectTo: 'home', pathMatch: 'full'}
+
   
 ];
 

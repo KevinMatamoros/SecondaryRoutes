@@ -1,4 +1,4 @@
 export const environment = {
   production: true,
-  'WS':'http://dummy.restapiexample.com/api/v1/'
+  'WS':'https://dummy.restapiexample.com/api/v1/'
 };
