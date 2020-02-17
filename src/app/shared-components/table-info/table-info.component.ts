@@ -7,6 +7,10 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class TableInfoComponent implements OnInit {
   @Input() employee;
+  @Input('flagName') _name;
+  @Input('flagSalary') _salary;
+
+
 
   constructor() { }
 

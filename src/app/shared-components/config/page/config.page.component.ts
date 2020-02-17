@@ -11,18 +11,13 @@ import { AppState } from '../../../state/app-reducer';
 })
 export class ConfigComponentPage implements OnInit {
 
-  flagName$;
-  flagSalary$;
-
 
   constructor(
-    private employeeService: EmployeeService,
-  ) { }
+  ) { 
+    
+  }
 
   ngOnInit() {
-
-    this.flagSalary$ = this.employeeService.selector_getSalary();
-    this.flagName$ = this.employeeService.selector_getName();
 
   }
 

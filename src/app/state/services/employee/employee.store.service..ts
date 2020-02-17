@@ -25,6 +25,14 @@ export class EmployeeService {
     this.store.dispatch(Actions.setEmployee(data));
   }
 
+  setName(){
+    this.store.dispatch(Actions.setName());
+  }
+
+  setSalary(){
+    this.store.dispatch(Actions.setSalary());
+  }
+
   selector_getEmployee(){
     return this.store.select(Selectors.getEmployee);
   }

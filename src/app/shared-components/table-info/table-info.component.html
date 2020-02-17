@@ -2,16 +2,16 @@
   <thead>
     <tr>
       <th scope="col">Id</th>
-      <th scope="col">Name</th>
-      <th scope="col">Salary</th>
+      <th scope="col" *ngIf="_name">Name</th>
+      <th scope="col" *ngIf="_salary">Salary</th>
       <th scope="col">Age</th>
     </tr>
   </thead>
   <tbody *ngFor="let item of employee">
     <tr>
       <th scope="row">{{item.id}}</th>
-      <td>{{item.employee_name}}</td>
-      <td>{{item.employee_salary}}</td>
+      <td *ngIf="_name">{{item.employee_name}}</td>
+      <td *ngIf="_salary">{{item.employee_salary}}</td>
       <td>{{item.employee_age}}</td>
     </tr>
   </tbody>

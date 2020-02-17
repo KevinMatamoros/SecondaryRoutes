@@ -10,6 +10,8 @@ import { EmployeeService } from '../../state/services/employee/employee.store.se
 export class HomeComponent implements OnInit {
 
   employee$: Observable<any>;
+  flagSalary$:Observable<boolean>;
+  flagName$: Observable<boolean>;
 
   constructor(
     private employeeService: EmployeeService
@@ -18,6 +20,8 @@ export class HomeComponent implements OnInit {
   ngOnInit() {
     this.employeeService.getEmployee();
     this.employee$ = this.employeeService.selector_getEmployee();
+    this.flagSalary$ = this.employeeService.selector_getSalary();
+    this.flagName$ = this.employeeService.selector_getName();
   }
 
 }
