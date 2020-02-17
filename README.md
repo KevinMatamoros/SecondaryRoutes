@@ -1,5 +1,6 @@
 # SecondaryRoute
 Basic example in secondary routes
+
 PENDING: Finish the modal of config and NGRX
 
 ## Development server
